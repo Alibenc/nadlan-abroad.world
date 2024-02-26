@@ -1,0 +1,355 @@
+.modal-slider .slider-card {
+  user-select: none; 
+}
+.alice-carousel .alice-carousel__prev-btn, .alice-carousel .alice-carousel__next-btn,
+.gallery-modal__content-inner .alice-carousel__prev-btn, .gallery-modal__content-inner .alice-carousel__next-btn{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.alice-carousel .alice-carousel__next-btn-item, .alice-carousel .alice-carousel__prev-btn-item, 
+.gallery-modal__content-inner .alice-carousel__prev-btn, .gallery-modal__content-inner .alice-carousel__next-btn {
+  position: absolute;
+}
+.alice-carousel .alice-carousel__prev-btn, .gallery-modal__content-inner .alice-carousel__prev-btn {
+  left: 0;
+}
+.alice-carousel .alice-carousel__next-btn, .gallery-modal__content-inner .alice-carousel__next-btn {
+  right: 0;
+}
+.alice-carousel .alice-carousel__prev-btn-item,a.gallery-modal__content-inner .alice-carousel__prev-btn-item {
+  left: -55px;
+}
+.alice-carousel .alice-carousel__next-btn-item, .gallery-modal__content-inner .alice-carousel__next-btn-item {
+  right: -55px;
+}
+.modal-slider .alice-carousel__prev-btn-item.__inactive, .modal-slider .alice-carousel__next-btn-item.__inactive {
+  opacity: 0;
+}
+.alice-carousel__next-btn-item, .alice-carousel__prev-btn-item {
+  border-color: transparent;
+  transition: all 0.3s ease 0s;
+}
+.alice-carousel__next-btn-item:hover, .alice-carousel__prev-btn-item:hover {
+  border-color: #0065cb;
+}
+.objects-carousel .alice-carousel .alice-carousel__prev-btn, 
+.objects-carousel .alice-carousel .alice-carousel__next-btn {
+  top: 45%;
+}
+.modal-slider {
+  padding: 0 20px;
+}
+.modal-image__wrap {
+  width: 100%;
+  position: relative;
+}
+.modal-image__wrap-inner {
+  padding-bottom: 52.91%;
+}
+.modal-image__wrap .modal-image {
+  position: absolute;
+  max-width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  object-fit: contain;
+}
+.alice-carousel__next-btn-item.__inactive, .alice-carousel__prev-btn-item.__inactive {
+  opacity: 0;
+}
+
+
+
+.gallery-modal {
+  position: fixed;
+  z-index: 1001;
+  width: 100%;
+  min-height: 100vh;
+  max-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  left: 0;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease 0s;
+  display: flex;  
+  overflow: auto;
+}
+.gallery-modal__content {
+  margin: auto;
+  position: relative;
+}
+.gallery-modal._active {
+  opacity: 1;
+  visibility: visible;
+}
+.thumbs img.w-full {
+  height: 100%;
+}
+.thumbs .modal-image {
+  padding: 0;
+}
+.gallery-modal__swiper, .gallery-modal__thumbs {
+  width: 1200px;
+}
+.gallery-modal__slider-main .swiper .swiper-button-prev, 
+.gallery-modal__slider-main .swiper .swiper-button-next {
+  display: none;
+}
+.gallery-modal__content-inner .swiper-button-next::after, 
+.gallery-modal__content-inner .swiper-button-prev::after {
+  color: #fff;
+}
+.gallery-modal__content-inner {
+  position: relative;
+}
+.gallery-modal__thumbs .modal-image {
+  width: 285px;
+  height: 150px;
+}
+.gallery-modal__content-inner > *:not(:first-child) {
+  margin-top: 40px;
+}
+.gallery-modal__content-inner .swiper-button-prev,
+.gallery-modal__content-inner .swiper-button-next {
+  top: 40%;
+}
+.gallery-modal__thumbs .swiper-slide::before {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  background: rgba(0, 0, 0, 0.5);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  transition: background 0.3s ease 0s;
+} 
+.gallery-modal__thumbs .swiper-slide:hover::before, 
+.gallery-modal__thumbs .swiper-slide-thumb-active::before {
+  background: transparent;
+}
+.modal-image {
+  padding: 0;
+}
+.swiper-slide  {
+  user-select: none;
+}
+.alice-img-wrapper {
+  cursor: pointer;
+  position: relative;
+}
+.alice-img-wrapper__icon {
+  position: absolute;
+  color: #fff;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.55);
+  border-radius: 5px;
+  font-size: 25px;
+  top: 20px;
+  right: 30px;
+  transition: opacity 0.3s ease 0s;
+}
+.alice-img-wrapper__icon:hover  {
+  opacity: 0.8;
+}
+.gallery-modal__close {
+  position: absolute;
+  z-index: 200;
+  color: #fff;
+  top: 0;
+  right: 0;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+
+
+
+@media (max-width: 1435px) {
+  .objects-carousel .alice-carousel .alice-carousel__prev-btn-item {
+    left: -30px;
+  }
+  .objects-carousel .alice-carousel .alice-carousel__next-btn-item {
+    right: -30px;
+  }
+}
+@media (max-width: 1280px) {
+  .objects-carousel .alice-carousel .alice-carousel__prev-btn, 
+  .objects-carousel .alice-carousel .alice-carousel__next-btn {
+    top: 50%;
+  }
+}
+@media (max-width: 1240px) {
+  .gallery-modal__swiper, .gallery-modal__thumbs {
+    width: 1100px;
+  }
+}
+@media (max-width: 1140px) {
+  .gallery-modal__swiper, .gallery-modal__thumbs {
+    width: 900px;
+  }
+  .gallery-modal__thumbs .modal-image {
+    width: 210px;
+    height: 135px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .modal-slider > .w-screen {
+    width: 100vw;
+  }
+  .modal-slider .alice-carousel {
+    width: 96%;
+  }
+  .modal-slider .alice-carousel__next-btn-item {
+    right: -65px;
+  }
+  .modal-slider .alice-carousel__prev-btn-item {
+    left: -65px;
+  }
+  .alice-img-wrapper__icon {
+    position: absolute;
+    color: #fff;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.55);
+    border-radius: 5px;
+    font-size: 25px;
+    top: 20px;
+    right: 30px;
+    transition: opacity 0.3s ease 0s;
+  }
+}
+
+@media (max-width: 940px) {
+  .gallery-modal__swiper, .gallery-modal__thumbs {
+    width: 95vw;
+  }
+  .gallery-modal__thumbs .modal-image {
+    width: 22.34vw;
+    height: 14.36vw;
+  }
+  .gallery-modal__slider-main .swiper-button-next::after, 
+  .gallery-modal__slider-main .swiper-button-prev::after {
+    font-size: 4.57vw;
+  }
+
+  .gallery-modal__close {
+    font-size: 4.49vw;
+  }
+}
+@media (max-width: 850px) {
+  .gallery-modal__content-inner .swiper-button-prev, 
+  .gallery-modal__content-inner .swiper-button-next {
+    top: 35%;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .gallery-modal__thumbs .modal-image {
+    width: 46.34vw;
+    height: 23.36vw;
+  }
+  .gallery-modal__content-inner .swiper-button-prev, 
+  .gallery-modal__content-inner .swiper-button-next {
+    top: 35%;
+  }
+
+  .modal-image__wrap.modal-image__vert .modal-image__wrap-inner {
+    padding-bottom: 100%;
+  }
+  .gallery-modal._active {
+    background: rgba(0, 0, 0, 0.85);
+  }
+
+  .modal-slider > section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .modal-slider > section > *:not(.alice-carousel) {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+  .alice-carousel .alice-img-wrapper img {
+    height: 65.11vw;
+  }
+  .modal-slider, .modal-slider .alice-carousel .alice-img-wrapper img {
+    padding: 0;
+  }
+  .modal-slider .alice-carousel, .modal-slider > .w-screen {
+    width: 100vw;
+  }
+  .modal-slider .alice-carousel__prev-btn {
+    left: 10.42vw;
+  }
+  .modal-slider .alice-carousel__next-btn {
+    right: 10.42vw;
+  }
+  .modal-slider .alice-carousel__next-btn-item, .modal-slider .alice-carousel__prev-btn-item {
+    border-color: transparent;
+    font-size: 7.81vw;
+    color: #fff;
+  }
+  .modal-slider .alice-carousel__next-btn, .modal-slider .alice-carousel__prev-btn {
+    top: 45%;
+  }
+  .ReactModal__Content {
+    overflow-x: hidden !important;
+  }
+  .gallery-modal__close {
+    font-size: 8.49vw;
+  }
+  .gallery-modal__slider-main .swiper-button-next::after, .gallery-modal__slider-main .swiper-button-prev::after {
+    font-size: 7.57vw;
+  }
+}
+
+@media (max-width: 750px) {
+  .modal-slider .alice-carousel__next-btn-item {
+    right: -55px;
+  }
+  .modal-slider .alice-carousel__prev-btn-item {
+    left: -55px;
+  }
+
+  .alice-img-wrapper__icon {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .alice-carousel .alice-img-wrapper img {
+    height: 80.11vw;
+  }
+  .modal-slider .alice-carousel__prev-btn {
+    left: 14vw;
+  }
+  .modal-slider .alice-carousel__next-btn {
+    right: 14vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .modal-slider .alice-carousel__next-btn-item {
+    right: -50px;
+  }
+  .modal-slider .alice-carousel__prev-btn-item {
+    left: -50px;
+  }
+}
+
+@media (max-width: 330px) {
+  .gallery-modal__content-inner .swiper-button-prev, 
+  .gallery-modal__content-inner .swiper-button-next {
+    top: 31%;
+  }
+}
+
+.modal-slider > button {
+  top: 2.25rem;
+}

@@ -1,0 +1,153 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav .menu {
+    display: none;
+    position: absolute;
+    top: 3.5rem;
+    right: 2.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+nav .menu1 {
+    display: none;
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+nav .menu span {
+    height: 0.4rem;
+    width: 100%;
+    background-color: #dc1c2d;
+    border-radius: 0.5rem;
+}
+
+nav .menu1 span {
+    height: 0.4rem;
+    width: 100%;
+    background-color: #dc1c2d;
+    border-radius: 0.5rem;
+}
+
+@media (max-width: 1279px) {
+    nav .menu {
+        display: flex;
+    }
+
+    nav .menu1 {
+        display: flex;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav ul {
+        display: none;
+        justify-items: start;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0.25rem;
+    }
+
+    nav ul.open {
+        display: flex;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        margin: 0.2rem 0.5rem;
+    }
+}
+
+/*  */
+.header__nav {
+    align-items: center;
+
+    flex-direction: row-reverse;
+}
+.nav__wrapper {
+    flex-direction: row-reverse;
+}
+nav .menu1, nav .menu {
+    left: 2.5rem;
+}
+.header__logo-wrap {
+    justify-content: flex-end;
+}
+.header-logo {
+    width: 11rem;
+}
+
+
+.nav__popup-wrap {
+    position: relative;
+}
+.nav__link {
+    font-size: 24px;
+}
+
+
+@media (max-width: 1395px) {
+    .header-logo {
+      width: 7rem;
+    }
+}
+@media (max-width: 1279px) {
+    nav ul.open, .header__nav  {
+        flex-direction: column;
+    }
+    .header__nav {
+        align-items: flex-end;
+    }
+    nav .menu1, nav .menu {
+        top: 2.7rem;
+    }
+    .nav__wrapper > div > li {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 767.9px) {
+    .header-logo {
+        width: 44px;
+    }
+    nav .menu1 {
+        top: 1.2rem;
+    }
+    .logo-wrap {
+        width: 100%;
+    }
+}

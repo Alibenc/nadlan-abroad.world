@@ -1,0 +1,227 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "react-alice-carousel/lib/alice-carousel.css";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.slider {
+  max-width: 100%;
+  margin: auto;
+}
+
+.slider-track {
+  top: 8px;
+  height: 4px;
+  background: linear-gradient(90deg, #0065cb 0%, #003972 100%);
+}
+
+.slider-track.slider-track-0 {
+  background: rgb(232, 232, 232);
+}
+
+.slider-track.slider-track-2 {
+  background: rgb(232, 232, 232);
+}
+
+.slider .thumb {
+  width: 25px;
+  height: 25px;
+  cursor: grab;
+  background: #fff;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.305);
+  margin-top: -2px;
+}
+
+.alice-carousel__prev-btn-item {
+  color: #0065cb;
+  font-size: 32px;
+  padding: 0 15px;
+  border-radius: 50%;
+  transition: all 0.2s;
+  border: 2px solid rgb(232, 232, 232);
+}
+
+.alice-carousel__next-btn-item {
+  color: #0065cb;
+  font-size: 32px;
+  padding: 0 15px;
+  border-radius: 50%;
+  transition: all 0.2s;
+  border: 2px solid rgb(232, 232, 232);
+}
+
+.alice-carousel__next-btn-item:hover {
+  color: #0065cb;
+  border: 2px solid #0065cb;
+}
+
+.alice-carousel__prev-btn-item:hover {
+  color: #0065cb;
+  border: 2px solid #0065cb;
+}
+
+.card-desc-wrap {
+  padding: 10px;
+}
+
+.card-desc-wrap p {
+  margin: 0;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+/*  */
+.contact-text p {
+  font-size: 17px;
+}
+.contact-text > *:not(:first-child) {
+  margin-top: 8px;
+}
+.contact-rhombus {
+  transform: skewX(-15deg);
+}
+.contact-text svg {
+  margin: 0;
+}
+.contact-text > p {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  gap: .75rem;
+}
+.text-right {
+  text-align: right;
+}
+.top-text {
+  left: auto !important;
+  right: 1.75rem !important;
+}
+body.ReactModal__Body--open {
+  overflow: hidden;
+}
+._lock .ReactModal__Overlay {
+  overflow: hidden;
+}
+.css-13cymwt-control, .css-t3ipsp-control, .css-1hb7zxy-IndicatorsContainer {
+  flex-direction: row-reverse;
+}
+.money-wrap img {
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+  margin-right: 0;
+}
+.css-1nmdiq5-menu > * {
+  flex-direction: row-reverse;
+}
+.about__content.w-full.px-0 {
+  padding: 0;
+}
+.about__content-contact {
+  justify-content: center;
+  gap: 40px;
+}
+.about__content > *:not(:first-child) {
+  margin-top: 2rem;
+}
+.about__content > h4 {
+  font-weight: 700;
+}
+.about__contact {
+  font-size: 18px;
+  text-align: right;
+}
+.about__content-inner > *:not(:first-child) {
+  margin-top: 0.5rem;
+}
+#root {
+  min-height: 100vh;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+@media (max-width: 1280px) {
+  .about__content > p.text-2xl {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .contact-text p {
+    font-size: 16px;
+  }
+  .about__content.w-full.px-0 {
+    width: 100%;
+  }
+  .about__content-wrap.flex.flex-col.justify-center {
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+  }
+  .about__img-wrap.w-full.px-0 {
+    width: 70%;
+  }
+  .about__content > p.text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .about__content-contact > img {
+    width: 11rem;
+  }
+}
+@media (max-width: 784px) {
+  .contact-text p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 776px) {
+  .contact-text p {
+    font-size: 17px;
+  }
+}
+@media (max-width: 767.9px) {
+  .about__content > p.text-2xl {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+}
+@media (max-width: 470px) {
+  .about__contact {
+    font-size: 15px;
+  }
+  .about__content-contact > img {
+    width: 8.5rem;
+  }
+}
+@media (max-width: 400px) {
+  .about__content-contact > img {
+    width: 7rem;
+  }
+}
+@media (max-width: 372px) {
+  .contact-text p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 356px) {
+  .contact-logo {
+    width: 92px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,24 @@
+.feedback__checkbox {
+  flex-direction: row-reverse;
+  gap: 1.25rem;
+}
+.feedback-title {
+  text-align: right;
+}
+.feedback__img-wrap {
+  margin-bottom: 40px;
+}
+@media (max-width: 450px) {
+  .sended__wrap svg.text-9xl {
+    font-size: 7rem;
+  }
+}
+@media (max-width: 370px) {
+  .sended__wrap svg.text-9xl {
+    font-size: 6.5rem;
+  }
+  .sended__wrap h1.text-4xl.font-bold.my-5 {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+  }
+}

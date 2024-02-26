@@ -1,0 +1,50 @@
+#form {
+    animation-duration: 1s;
+    animation-name: form;
+}
+
+@keyframes form {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#send {
+    animation-duration: 1s;
+    animation-name: send;
+}
+
+@keyframes send {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#arrowUp {
+    animation-duration: 1s;
+    animation-name: arrowUp;
+}
+
+@keyframes arrowUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
